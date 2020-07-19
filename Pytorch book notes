@@ -1,0 +1,8 @@
+Tensors - Just matrices that take contiguous locations in memory.
+Unlike Python list elements that need not be stored together in memory. 
+
+A tensor is a view on an underlying 1D storage. So we can have different shapes of the tensor mapped to the same storage. 
+3 elements give us the tensor we seek from storage - 
+Size, Offset, Stride - similar to numpy
+
+PyTorch uses a trailing underscore to indicate that a function operates in place on a tensor (for example, Tensor.sqrt_)
